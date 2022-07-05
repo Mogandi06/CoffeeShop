@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 :root{
     --main-color:#d3ad7f;
@@ -8,8 +8,9 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
@@ -48,27 +49,28 @@ section{
 .heading{
     text-align: center;
     color:#fff;
-    text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
+    font-weight: 900;
 }
 
 .heading span{
     color:var(--main-color);
-    text-transform: uppercase;
+    font-weight: 900;
 }
 
-.btn{
+.bttn{
     margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color:rgb(49, 46, 46);
-    background: #fff;
+    color:#fff;
+    border-radius: 10px;
+    background: var(--main-color);
     cursor: pointer;
 }
 
-.btn:hover{
+.bttn:hover{
     letter-spacing: .2rem;
 }
 
@@ -92,6 +94,7 @@ section{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
+    text-decoration: none;
 }
 
 .header .navbar a:hover{
@@ -199,7 +202,7 @@ section{
     color:var(--main-color);
 }
 
-.header .cart-items-container .btn{
+.header .cart-items-container .bttn{
     width: 100%;
     text-align: center;
 }
@@ -217,16 +220,21 @@ section{
     max-width: 80rem;
 }
 
+.home .content a{
+    text-decoration: none;
+}
+
 .home .content h3{
-    font-size: 6rem;
+    font-size: 5.7rem;
     text-transform: uppercase;
     color:#fff;
+    font-weight: 900;
 }
 
 .home .content p{
-    font-size: 2rem;
-    font-weight: lighter;
-    line-height: 1.8;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.3;
     padding:1rem 0;
     color:#eee;
 }
@@ -253,6 +261,7 @@ section{
 .about .row .content h3{
     font-size: 5.5rem;
     color:#fff;
+    font-weight: 900;
 }
 
 .about .row .content p{
@@ -269,28 +278,35 @@ section{
 }
 
 .menu .box-container .box{
-    padding:5rem;
-    text-align: center;
-    border:var(--border);    
+    padding:2rem;
+    text-align: left;  
+}
+
+.menu .box-container .box .str{
+    height: 1rem; 
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 28rem;
+}
+
+.menu .box-container .box span{
+    margin-left: 1.5rem;
 }
 
 .menu .box-container .box h3{
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding:1rem 0;
 }
 
-.menu .box-container .box .price{
+.menu .box-container .box .addr{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     padding:.5rem 0;
 }
 
-.menu .box-container .box .price span{
+.menu .box-container .box .addr span{
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
@@ -302,6 +318,10 @@ section{
 
 .menu .box-container .box:hover > *{
     color:var(--black);
+}
+
+.booking{
+    color: #fff;
 }
 
 .products .box-container{
@@ -330,11 +350,11 @@ section{
     background:var(--main-color);
 }
 
-.products .box-container .box .image{
+.products .box-container .box .image-1{
     padding: 2.5rem 0;
 }
 
-.products .box-container .box .image img{
+.products .box-container .box .image-1 img{
     height: 25rem;
 }
 
@@ -357,75 +377,32 @@ section{
     font-size: 2.5rem;
 }
 
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
-
-.review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.review .box-container .box{
-    border:var(--border);
-    text-align: center;
-    padding:3rem 2rem;
-}
-
-.review .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-}
-
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-
-.review .box-container .box .stars i{
-    font-size: 1.5rem;
-    color:var(--main-color);
-}
-
-.contact .row{
+.contact .row1{
     display: flex;
     background:var(--black);
     flex-wrap: wrap;
     gap:1rem;
 }
 
-.contact .row .map{
+.contact .row1 .map{
     flex:1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
 
-.contact .row form{
+.contact .row1 form{
     flex:1 1 45rem;
     padding:5rem 2rem;
     text-align: center;
 }
 
-.contact .row form h3{
+.contact .row1 form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
     color:#fff;
 }
 
-.contact .row form .inputBox{
+.contact .row1 form .inputBox{
     display: flex;
     align-items: center;
     margin-top: 2rem;
@@ -434,13 +411,13 @@ section{
     border:var(--border);
 }
 
-.contact .row form .inputBox span{
+.contact .row1 form .inputBox span{
     color:#fff;
     font-size: 2rem;
     padding-left: 2rem;
 }
 
-.contact .row form .inputBox input{
+.contact .row1 form .inputBox input{
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
@@ -449,59 +426,6 @@ section{
     background:none;
 }
 
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.blogs .box-container .box{
-    border:var(--border);    
-}
-
-.blogs .box-container .box .image{
-    height: 25rem;
-    overflow:hidden;
-    width: 100%;
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-.blogs .box-container .box:hover .image img{
-    transform: scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding:2rem;
-}
-
-.blogs .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color:#fff;
-}
-
-.blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
-}
-
-.blogs .box-container .box .content span{
-    color:var(--main-color);
-    display: block;
-    padding-top: 1rem;
-    font-size: 2rem;
-}
-
-.blogs .box-container .box .content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:1rem 0;
-}
 
 .footer{
     background:var(--black);
@@ -558,8 +482,12 @@ section{
 }
 
 
-
-
+.booking button{
+    background-color: #d3ad7f;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+}
 
 
 
@@ -588,7 +516,7 @@ section{
 
 @media (max-width:768px){
 
-    #menu-btn{
+    #menu-bttn{
         display: inline-block;
     }
 
